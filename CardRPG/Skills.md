@@ -1,6 +1,6 @@
 ##General
 - 技能不会和职业绑定，不过技能会有职业限制
-- 技能分为 Positive（主动技能）, Passive（被动技能）
+- 技能分为 Positive（主动技能）, 主动技能只能在准备阶段发动 ;Passive（被动技能）,被动技能会有一个发动触发器
 
 ##Skills
 - Attack: 
@@ -46,3 +46,13 @@ ___
     type: Positive
     target: [...]
     effect: 造成Int * element.Purity * .5的伤害
+___
+
+- Reload:
+	active trigger: 进入抽牌阶段
+	requirement: General
+    cost: none
+    cooldown: 0
+    type: Passive
+    target: [type: self, ..]
+    effect: 有 (Int/10)% ， 不超过10%的几率再抽一张牌

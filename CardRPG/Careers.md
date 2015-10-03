@@ -7,9 +7,10 @@
 - 力量影响血量
 - ~~敏捷影响回避率~~
 - 智力影响卡片上限, ~~魔法防御~~
-- 暂定属性成长和相同，暂定为8
+- 暂定属性成长和相同，暂定为4
 
 ##详细属性
-- HP: BaseHP + Str * 7
-- 卡牌上限：BaseCardMaxLimit + Int * 0.1
+- HP: BaseHP + Str * 3
+- 卡牌上限：BaseCardMaxLimit + Int * 0.4
+- 手牌上限: BaseHandMaxLimit + 最小属性 * 0.1
 - ...
