@@ -3,56 +3,66 @@
 - 技能分为 Positive（主动技能）, 主动技能只能在准备阶段发动 ;Passive（被动技能）,被动技能会有一个发动触发器
 
 ##Skills
-- Attack: 
-	requirement: General
-    cost: Weapon * 1
-    cooldown: 0
-    type: Positive
-    target: [type: emeny, number: 1]
-    effect: 根据消耗卡片进行一次攻击
+- Attack
+	- requirement: General
+    - cost: Weapon * 1
+    - cooldown: 0
+    - type: Positive
+    - target
+    	- type: emeny
+    	- number: 1
+    - effect: 根据消耗卡片进行一次攻击
 ___
 
-- Defense:
-	requirement: General
-    cost：Armor * 1
-    cooldown: 0
-    type: Positive
-    target: [type: self, ..]
-    effect: 根据消耗卡片进行一次防御
+- Defense
+	- requirement: General
+    - cost：Armor * 1
+    - cooldown: 0
+    - type: Positive
+    - target
+    	- type: self
+    	- ..
+    - effect: 根据消耗卡片进行一次防御
 ___
 
-- Power Attack:
-	requirement: WarriorOnly
-    cost: Weapon * 2
-    cooldown: 1
-    type: Positive
-    target: [type: enemy, number: 1]
-    effect: 消耗卡片的damage sum * 0.9
+- Power Attack
+	- requirement: WarriorOnly
+    - cost: Weapon * 2
+    - cooldown: 1
+    - type: Positive
+    - target
+    	- type: enemy
+    	- number: 1
+    - effect: 消耗卡片的damage sum * 0.9
 ___
 
-- Dartle:
-	requirement: ArcherOnly
-    cost: *Bow* * 2
-    cooldown: 2
-    type: Positive
-    target: [type: enemy, number: 1]
-    effect: 武器damage * .7 连续3次攻击，每次攻击附带无视防御的伤害（Agi * 0.3）
+- Dartle
+	- requirement: ArcherOnly
+    - cost: *Bow* * 2
+    - cooldown: 2
+    - type: Positive
+    - target
+    	- type: enemy
+    	- number: 1
+    - effect: 武器damage * .7 连续3次攻击，每次攻击附带无视防御的伤害（Agi * 0.3）
 ___
 
-- Magic Bullet:
-	requirement: MagicianOnly
-    cost: element * 1
-    cooldown: 0
-    type: Positive
-    target: [...]
-    effect: 造成Int * element.Purity * .5的伤害
+- Magic Bullet
+	- requirement: MagicianOnly
+    - cost: element * 1
+    - cooldown: 0
+    - type: Positive
+    - target: ...
+    - effect: 造成Int * element.Purity * .5的伤害
 ___
 
-- Reload:
-	active trigger: 进入抽牌阶段
-	requirement: General
-    cost: none
-    cooldown: 0
-    type: Passive
-    target: [type: self, ..]
-    effect: 有 (Int/10)% ， 不超过10%的几率再抽一张牌
+- Reload
+	- active trigger: 进入抽牌阶段
+	- requirement: General
+    - cost: none
+    - cooldown: 0
+    - type: Passive
+    - target
+    	- type: self
+    	- ..
+    - effect: 有 (Int/10)% ， 不超过10%的几率再抽一张牌

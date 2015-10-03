@@ -8,7 +8,12 @@
 - ...
 
 ##预定值
-- General: [career: general, level: 0, Str,Agi,Int: 0]
-- WarriorOnly: [career: Warrior, ..]
+- General
+	- career: general
+	- level: 0
+	- Str,Agi,Int: 0
+- WarriorOnly
+	- career: Warrior
+	- ..
 - ArcherOnly: ..
 - MagicianOnly: ..
