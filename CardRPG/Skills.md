@@ -12,7 +12,6 @@
     	- type: emeny
     	- number: 1
     - effect: 根据消耗卡片进行一次攻击
-___
 
 - Defense
 	- requirement: General
@@ -23,7 +22,6 @@ ___
     	- type: self
     	- ..
     - effect: 根据消耗卡片进行一次防御
-___
 
 - Power Attack
 	- requirement: WarriorOnly
@@ -34,7 +32,6 @@ ___
     	- type: enemy
     	- number: 1
     - effect: 消耗卡片的damage sum * 0.9
-___
 
 - Dartle
 	- requirement: ArcherOnly
@@ -45,7 +42,6 @@ ___
     	- type: enemy
     	- number: 1
     - effect: 武器damage * .7 连续3次攻击，每次攻击附带无视防御的伤害（Agi * 0.3）
-___
 
 - Magic Bullet
 	- requirement: MagicianOnly
@@ -54,7 +50,6 @@ ___
     - type: Positive
     - target: ...
     - effect: 造成Int * element.Purity * .5的伤害
-___
 
 - Reload
 	- active trigger: 进入抽牌阶段

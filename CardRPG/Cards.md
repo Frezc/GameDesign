@@ -8,7 +8,6 @@
     - damage: Str * 1.1
     - effect: none
     - description: 魔法凝聚的剑
-___
 
 - Wooden Shield:
 	- type: Armor
@@ -16,7 +15,6 @@ ___
     - resist: Agi * .5
     - effect: none
     - description: 木盾
-___
 
 - Elemix:
 	- type: Element
@@ -24,7 +22,6 @@ ___
     - purity: 1
     - effect: none
     - description: 最基础的魔法元素
-___
 
 - Bow:
 	- type: Weapon
