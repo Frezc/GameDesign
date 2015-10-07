@@ -25,7 +25,7 @@
 
 - Bow:
 	- type: Weapon
-    - requirement: ArcherOnly
+    - requirement: General
     - damage: Agi * .9
     - effect: none
     - description: 魔法凝聚的弓
