@@ -2,6 +2,7 @@
 - 技能不会和职业绑定，不过技能会有职业限制
 - 技能分为 Positive（主动技能）, 主动技能只能在准备阶段发动 ;Passive（被动技能）,~~被动技能会有一个发动触发器~~，改成附加状态或者Buff。
 - 技能会有等级和熟练度，一定的熟练度可以提升等级
+- 技能满级后可能会有附加效果，见[max]后的内容
 
 ##Skills
 - Attack
@@ -63,11 +64,11 @@
 	- cost: element * 2
 	- cooldown: 2
 	- type: Positive
-	- effect: 附加一个buff: 回避对方该回合的攻击，并且接下来一回合攻击丢失率（30 + level * 10）% , 当该技能满级时，可以附加一回合（15 + level * 5）%的丢失率
+	- effect: 附加一个buff: 回避对方该回合的攻击，并且接下来一回合攻击丢失率（30 + level * 10）%. [max]: 可以附加一回合（15 + level * 5）%的丢失率
 
 - Reload
 	- buff: reload to player
-	- max level: 10
+	- max level: 5
 	- requirement: General
     - type: Passive
-    - effect: 有 level%的几率再抽一张牌
+    - effect: 有 （level * 2）%的几率再抽一张牌， [max]: 成功发动效果后有10%的几率再抽一张
