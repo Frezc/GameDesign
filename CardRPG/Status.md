@@ -9,10 +9,10 @@
 	- 基础属性总和8~11, 成长概率总和100%~120%
 
 ##详细属性
-- HP: BaseHP + Str * 3
-- 卡牌上限：BaseCardMaxLimit + Int * 0.4
-- 手牌上限: BaseHandMaxLimit + 最小属性 * 0.1
-- ...
+- HP: BaseMaxHP + Str * 3
+- 卡牌上限：BaseMaxDeck + Int * 0.4
+- 手牌上限: BaseMaxHand + 最小属性 * 0.1
+- 升级所需经验值为 level * 10
 
 ##~~职业的基本~~
 - ~~不同职业成长会各不相同，每个职业有个成长较高的属性。~~
