@@ -6,57 +6,68 @@
 ##Skills
 - Attack
 	- requirement: General
-	- max level: 30
+	- max level: 5
     - cost: Weapon * 1
     - cooldown: 0
     - type: Positive
     - target    //先不做，目前只做1v1
     	- type: emeny
     	- number: 1
-    - effect: 根据消耗卡片进行一次攻击,伤害修正 * (1 + level * 0.02)
+    - effect: 根据消耗卡片进行一次攻击,伤害修正 * (1 + level * 0.1)
 
 - Defense
 	- requirement: General
-	- max level: 30
+	- max level: 5
     - cost：Armor * 1
     - cooldown: 0
     - type: Positive
     - target
     	- type: self
     	- ..
-    - effect: 根据消耗卡片进行一次防御,防御修正 * （1 + level * 0.01）
+    - effect: 根据消耗卡片进行一次防御,防御修正 * （1 + level * 0.06）
 
 - Power Attack
 	- requirement: General
-	- max level: 20
+	- max level: 5
     - cost: Weapon * 2
     - cooldown: 1
     - type: Positive
     - target
     	- type: enemy
     	- number: 1
-    - effect: 消耗卡片的damage sum * (0.9 + level * 0.02)
+    - effect: 消耗卡片的damage sum * (0.9 + level * 0.08)
 
 - Dartle
 	- requirement: General
+	- max level: 5
     - cost: *Bow* * 2
     - cooldown: 2
     - type: Positive
     - target
     	- type: enemy
     	- number: 1
-    - effect: 武器damage * .7 连续3次攻击，每次攻击附带无视防御的伤害（Agi * 0.3）
+    - effect: 武器damage * (.7 + level * .04) 连续3次攻击，每次攻击附带无视防御的伤害（Agi * 0.2 + level * .04）
 
-- Magic Bullet
+- Purify
 	- requirement: General
+	- max level : 3
     - cost: element * 1
-    - cooldown: 0
+    - cooldown: 1
     - type: Positive
     - target: ...
-    - effect: 造成Int * element.Purity * .5的伤害
+    - effect: 有（30 + level * 20）%几率除去对方的活动型buff或自己的debuff
+
+- Flash Shock
+	- requirement: General
+	- max level : 5
+	- cost: element * 2
+	- cooldown: 2
+	- type: Positive
+	- effect: 附加一个buff: 回避对方该回合的攻击，并且接下来一回合攻击丢失率（30 + level * 10）% , 当该技能满级时，可以附加一回合（15 + level * 5）%的丢失率
 
 - Reload
 	- buff: reload to player
+	- max level: 10
 	- requirement: General
     - type: Passive
-    - effect: 有 (Int/10)% ， 不超过10%的几率再抽一张牌
+    - effect: 有 level%的几率再抽一张牌
