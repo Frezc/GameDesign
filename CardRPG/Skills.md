@@ -64,7 +64,7 @@
 	- cost: element * 2
 	- cooldown: 2
 	- type: Positive
-	- effect: 附加一个buff: 回避对方该回合的攻击，并且接下来一回合攻击丢失率（30 + level * 10）%. [max]: 可以附加一回合（15 + level * 5）%的丢失率
+	- effect: 附加一个buff: 回避对方该回合的攻击，并且接下来一回合攻击丢失率（30 + level * 10）%. [max]: 效果附加一回合，丢失率为当前的一半。
 
 - Reload
 	- buff: reload to player
